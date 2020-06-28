@@ -1,7 +1,7 @@
 <header>
     <div class="row no-gutter">
         <div class="col-md-4 col-4">
-            <img src="../../assets/images/left-arrow.png" alt="">
+            <img src="assets/images/left-arrow.png" alt="">
         </div>
         <div class="col-md-4 col-4 text-center">
             <div class="detail-head">
@@ -9,24 +9,20 @@
             </div>
         </div>
         <div class="col-md-4 col-4 text-right">
-            <img src="../../assets/images/open-menu.png" alt="">
+            <img src="assets/images/open-menu.png" alt="">
         </div>
     </div>
 </header>
 
 <div class="content">
     <div class="tags row">
-        <!-- <mat-form-field class="example-chip-list"> -->
         <mat-chip-list #chipList>
-            <mat-chip *ngFor="let item of tags" [selectable]="selectable" [removable]="removable"
+            <mat-chip *ngFor="let item of tags" 
                 (removed)="remove(item)">
                 {{item.name}}
                 <mat-icon matChipRemove (click)="remove(item)" *ngIf="item.remove">cancel</mat-icon>
             </mat-chip>
-            <!-- <input [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-                    [matChipInputAddOnBlur]="addOnBlur" (matChipInputTokenEnd)="add($event)"> -->
         </mat-chip-list>
-        <!-- </mat-form-field> -->
     </div>
     <div class="hastag-title">
         Hashtags:
@@ -45,24 +41,24 @@
             <img class="img-posts" src={{item.img}} alt="">
             <div class="time-line">
                 <span>
-                    <img src="../../assets/images/clock.png" alt="">
+                    <img src="assets/images/clock.png" alt="">
                     {{item.date}}
                 </span>
 
                 <div class="gallery-info text-right">
                     <div class="bg-yellow">
-                        <img *ngIf="item.gallery" src="../../assets/images/gallery.png" alt="">
-                        <img *ngIf="item.video" src="../../assets/images/play-button.png" alt="">
+                        <img *ngIf="item.gallery" src="assets/images/gallery.png" alt="">
+                        <img *ngIf="item.video" src="assets/images/play-button.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="comments">
                 <span>
-                    <img src="../../assets/images/heart.png" alt="">
+                    <img src="assets/images/heart.png" alt="">
                     {{item.likes}}
                 </span>
                 <span>
-                    <img src="../../assets/images/comment.png" alt="">
+                    <img src="assets/images/comment.png" alt="">
                     {{item.comments}}
                 </span>
             </div>
@@ -85,24 +81,24 @@
                 <img class="img-posts" src="{{item.img}}" alt="">
                 <div class="time-line">
                     <span>
-                        <img src="../../assets/images/clock.png" alt="">
+                        <img src="assets/images/clock.png" alt="">
                         {{item.date}}
                     </span>
 
                     <div class="gallery-info text-right">
                         <div class="bg-yellow">
-                            <img *ngIf="item.gallery" src="../../assets/images/gallery.png" alt="">
-                            <img *ngIf="item.video" src="../../assets/images/play-button.png" alt="">
+                            <img *ngIf="item.gallery" src="assets/images/gallery.png" alt="">
+                            <img *ngIf="item.video" src="assets/images/play-button.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="comments">
                     <span>
-                        <img src="../../assets/images/heart.png" alt="">
+                        <img src="assets/images/heart.png" alt="">
                         {{item.likes}}
                     </span>
                     <span>
-                        <img src="../../assets/images/comment.png" alt="">
+                        <img src="assets/images/comment.png" alt="">
                         {{item.comments}}
                     </span>
                 </div>
@@ -114,19 +110,19 @@
 <footer>
     <div class="row">
         <div class="col-md-3 col-3 text-center">
-            <img src="../../assets/images/home.png" alt="">
+            <img src="assets/images/home.png" alt="">
             <div class="detail-footer-content">Home</div>
         </div>
         <div class="col-md-3 col-3 text-center">
-            <img src="../../assets/images/user.png" alt="">
+            <img src="assets/images/user.png" alt="">
             <div class="detail-footer-content">Profile</div>
         </div>
         <div class="col-md-3 col-3 text-center">
-            <img src="../../assets/images/bar-chart.png" alt="">
+            <img src="assets/images/bar-chart.png" alt="">
             <div class="detail-footer-content">Insights</div>
         </div>
         <div class="col-md-3 col-3 text-center">
-            <img src="../../assets/images/alert.png" alt="">
+            <img src="assets/images/alert.png" alt="">
             <div class="detail-footer-content">Notifications</div>
         </div>
     </div>
