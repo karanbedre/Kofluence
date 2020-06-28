@@ -1,0 +1,201 @@
+header {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    color: white;
+    height: 7vh;
+    z-index: 111;
+    .row {
+        padding-top: 2%;
+
+        img {
+            width: 21%;
+        }
+        .detail-head {
+            font-size: 18px;
+        }
+    }
+}
+
+.p-0 {
+    padding: 0px;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.content {
+    height: calc(100vh - 14vh);
+    overflow-y: auto;
+    padding-top: 7vh;
+    .tags {
+        width: 90%;
+        margin: 20px;
+        border-radius: 20px;
+        border: 1px solid #ffda6d;
+        outline: none;
+        height: 35px;
+    }
+    .hastag-title {
+        margin: 0px 20px;
+        font-weight: 500;
+        .tag-title {
+            margin-left: 10px;
+            border-radius: 20px;
+            outline: none;
+            background: #fff0c4;
+            font-size: 10px;
+            padding: 3px 12px;
+        }
+    }
+    .your-posts {
+        margin: 10px 20px 0px;
+        font-weight: 500;
+    }
+
+    .carousel {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        .posts:first-child {
+            margin-left: 20px;
+        }
+    }
+    .posts {
+        width: 43%;
+        height: 178px;
+        margin: 5px;
+        padding: 0px;
+        border: 1px solid black;
+        border-radius: 5px;
+        position: relative;
+        display: inline-block;
+        background-color: black;
+        .img-posts {
+            width: 100%;
+            height: 170px;
+            opacity: 0.8;
+        }
+    }
+
+    .gallery-info {
+        position: absolute;
+        right: -26vw;
+        top: 0px;
+        .bg-yellow {
+            background: #ffc107;
+            width: 25px;
+            border-radius: 20px;
+            height: 25px;
+            img {
+                padding: 4px;
+            }
+        }
+    }
+
+    .user-posts {
+        height: 178px;
+        margin: 5px;
+        padding: 0px;
+        border: 1px solid black;
+        border-radius: 5px;
+        position: relative;
+        display: inline-block;
+        background-color: black;
+        .img-posts {
+            width: 100%;
+            height: 170px;
+            opacity: 0.8;
+        }
+    }
+
+    .time-line {
+        position: absolute;
+        top: 0px;
+        color: white;
+        font-size: 10px;
+        span {
+            img {
+                width: 18%;
+            }
+        }
+    }
+    .comments {
+        position: absolute;
+        bottom: 0px;
+        background: #fff0c4;
+        width: 100%;
+        border-radius: 4px;
+        text-align: center;
+        span {
+            font-size: 10px;
+            font-weight: 500;
+            margin: 5px;
+            img {
+                width: 9%;
+            }
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7vh;
+    z-index: 111;
+    background-color: white;
+    img {
+        width: 42%;
+    }
+    .detail-footer-content {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 750px) {
+    header {
+        img {
+            width: 14% !important;
+        }
+        .detail-head {
+            font-size: 26px !important;
+        }
+    }
+
+    .content {
+        height: calc(100vh - 9vh);
+        overflow-y: auto;
+        padding-top: 7vh;
+        input {
+            width: 100%;
+            margin: 20px;
+            border-radius: 20px;
+            border: 1px solid #ffda6d;
+            outline: none;
+            height: 48px;
+        }
+        .hastag-title {
+            font-size: 20px;
+            .tag-title{
+                font-size: 14px;
+            }
+        }
+        .gallery-info{
+            right: -14vw;
+        }
+        .posts {
+            width: 23%;
+        }
+    }
+
+    footer {
+        img {
+            width: auto;
+        }
+        .detail-footer-content {
+            font-size: 18px;
+        }
+    }
+}

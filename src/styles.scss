@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+.row {
+    margin: 0px;
+}
+
+.no-gutter {
+    margin: 0px 15px;
+}
+.mat-chip.mat-standard-chip {
+    background-color: #fff0c4;
+}
+.mat-standard-chip {
+    min-height: 19px !important;
+}
+.mat-chip-list-wrapper .mat-standard-chip {
+    margin: 10px 0px 0px 10px !important;
+}
+.mat-chip {
+    font-size: 11px;
+    font-weight: 500;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1024px) and (min-width: 750px) {
+    .mat-chip {
+        font-size: 14px !important;
+    }
+}
